@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="tmac.css">
+    <title>Layout</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="change">
+            <image src="nbaone.png" width="40px" height="55px" class="nba" />NBA Legends</h1>
+
+        <div class="thenav">
+            <img src="nba-logo-on-wood.jpg" alt="My Layout Logo" width="100px" height="85px" class="logo">
+            <nav class="top">
+                <ul>
+                    <li><a href="http://www.nba.com">NBA</a>
+                        <li>
+                            <li><a href="#">About</a></li>
+                            <li onclick="slow()"><a href="#">Players</a>
+                                <ul>
+                                    <li><a href="#">T-Mac <img src="tmacw.png" width="25px" height="20px" class="tmacw"></a>
+                                    </li>
+                                    <li><a href="#kobesec">Kobe</a>
+                                    </li>
+                                    <li><a href="#">Kevin Durant</a>
+                                    </li>
+                                    <li><a href="#">The Goat</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">News</a></li>
+                </ul>
+
+                <div class="userlogin">
+                    <form action="/action_page.php">
+                        Username<br>
+                        <input type="text" name="User" maxlength="20" />
+                        <br> Password <br>
+                        <input type="Password" name="User" />
+
+                        <input type="button" value="Login" class="log" />
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+        <div class="main">
+            <h1>T-Mac <img src="tmacw.png" alt="TmaC" width="64px" height="44px" class="tmacLogo" /></h1>
+            <hr style="color:red;">
+
+            <div class="img-container">
+                <img src="tmac.jpg" alt="TmaC" width="175px" height="220px" class="tracy fade-img" />
+            </div>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release </p>
+
+        </div>
+
+
+<script>
+    function slow() {
+    document.getElementsByClassName("tracy")[0]
+    .style.opacity = 0;
+    var tracy1 = document.createElement("img");
+    tracy1.src = "https://cdn5.kicksonfire.com/wp-content/uploads/2015/08/TRACY-MCGRADY-WAS-IN-CHINA-TO-RE-LAUNCH-THE-ADIDAS-T-MAC-5-4.jpg?x77385";
+    tracy1.style.width = "175px";
+    tracy1.style.height = "220px";
+    tracy1.style.opacity = 0;
+    tracy1.style.float = "left";
+    tracy1.style.marginLeft = "10px";
+    tracy1.className = "fade-img";
+    document.getElementsByClassName("img-container")[0]
+    .appendChild(tracy1);
+    setTimeout(function() {tracy1.style.opacity = 1;},0);
+}
+    </script>
+
+</body>
+</html>
